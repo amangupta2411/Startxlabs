@@ -1,0 +1,28 @@
+<!doctype>
+<html>
+<head>
+<title>ASSIGNMENT 1</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      axios
+        .get("https://api.github.com/users")
+        .then(response => {
+          console.log(response.data);
+        })
+        .catch(error => console.error(error));
+    </script>
+</head>
+<body>
+<div class="form">
+             <a href="#"><img src="images/logo.jpg"></a>
+             <h2>ENTER USERNAME</h2>
+             <form>
+             <input type="username" class="input-box" placeholder="Your Username">
+             <button type="button" class="enter-btn">ENTER</button>
+             </form>
+       </div>
+       </body>
+</html>
